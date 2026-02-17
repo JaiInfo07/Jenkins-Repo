@@ -2,8 +2,8 @@ FROM ubuntu:latest
 
 WORKDIR app/
 
-RUN apt update \
-    apt install nginx -y
+RUN apt update
+RUN apt install nginx
 
 COPY index.html /var/www/html/
 
